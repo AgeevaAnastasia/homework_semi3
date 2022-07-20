@@ -2,3 +2,21 @@
 // 3 -> 1, 8, 27
 // 5 -> 1, 8, 27, 64, 125
 
+Console.Clear();
+Console.Write("Введите целое положительное число: ");
+int n = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine();
+Console.WriteLine($"| Число | Куб числа |");
+Console.WriteLine($"|-------|-----------|");
+WriteSquareTable(n);
+
+
+void WriteSquareTable(int n1)
+{
+    for (int a = 1; a <= n1; a++)
+    {
+        Console.WriteLine($"| {a, 5} | {a * a * a, 9} |");
+        Console.WriteLine($"|-------|-----------|");
+    }
+}
