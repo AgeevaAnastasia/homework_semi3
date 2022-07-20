@@ -9,10 +9,10 @@ int n = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine();
 Console.WriteLine($"| Число | Куб числа |");
 Console.WriteLine($"|-------|-----------|");
-WriteSquareTable(n);
+WriteCubeTable(n);
 
 
-void WriteSquareTable(int n1)
+void WriteCubeTable(int n1)
 {
     for (int a = 1; a <= n1; a++)
     {
